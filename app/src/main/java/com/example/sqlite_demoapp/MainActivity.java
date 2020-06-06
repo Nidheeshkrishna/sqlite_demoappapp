@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity{
        // obj.setAdapter(arrayAdapter);
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
         image_adapter = new Home_adapter(getApplicationContext(), (ArrayList<datamodel>) array_list);
-        //recyclerView.setHasFixedSize(true);
+        recyclerView.setHasFixedSize(true);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         recyclerView.setAdapter(image_adapter);
